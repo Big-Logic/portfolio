@@ -36,15 +36,24 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* LAYOUT */
+/* MAIN LAYOUT */
 
-.main-header {
-  background-color: gold;
+.main-layout__child {
+  padding: 8px 10px;
 }
 
-.main {
-  background-color: aqua;
+.main-layout {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(100px, auto) 1fr;
 }
 
-#root {
+@media screen and (max-width: 992px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto) 1fr;
+  }
 }
+
+/* MAIN LAYOUT */
