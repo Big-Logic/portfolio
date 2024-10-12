@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -39,7 +40,7 @@ h6 {
 /* MAIN LAYOUT */
 
 .main-layout__child {
-  padding: 8px 10px;
+  padding: 16px;
 }
 
 .main-layout {
@@ -57,3 +58,60 @@ h6 {
 }
 
 /* MAIN LAYOUT */
+
+/* MAIN HEADER */
+
+/* main header profile */
+.main-header__profile--imagecontainer {
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.main-header__profile {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 10px;
+}
+
+/* //////////// */
+
+.main-header__links {
+  overflow-y: auto;
+}
+
+.main-header__nav {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto minmax(100px, 1fr) auto;
+}
+
+.main-header {
+  height: 100%;
+  border-right: 1px solid #f0ebeb;
+}
+
+/* MAIN HEADER */
+
+/* RESUABLE CLASSES */
+
+/* nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-links__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+/* RESUABLE CLASSES */
