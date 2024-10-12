@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="./src/styles/index.css" />
   </head>
   <body>
+    <!-- MAIN LAYOUT START -->
     <div id="root" class="main-layout">
+      <!-- MAIN HEADER START-->
       <header class="main-header main-layout__child">
         <nav class="main-header__nav">
+          <!-- main header profile start -->
           <div class="main-header__profile">
             <div class="main-header__profile--imagecontainer">
               <img
@@ -27,8 +30,12 @@
               <p>Junior Frontend Engineer</p>
             </div>
           </div>
+          <!-- main header profile end-->
+
+          <!-- main header links start -->
           <div class="main-header__links">
-            <ul class="nav-links">
+            <!-- nav links start -->
+            <ul class="nav-links main-header__toplinks">
               <li>
                 <a href="#" class="nav-links__link"
                   ><span class="material-symbols-outlined">home</span
@@ -55,9 +62,9 @@
                 >
               </li>
             </ul>
-          </div>
-          <div class="main-header__socials">
-            <ul class="nav-links">
+            <!-- nav links end -->
+            <!-- nav links start -->
+            <ul class="nav-links main-header__socials">
               <li>
                 <a href="#" class="nav-links__link"
                   ><span class="material-symbols-outlined">home</span
@@ -77,10 +84,19 @@
                 >
               </li>
             </ul>
+            <!-- nav links end -->
           </div>
+          <!-- main header links end -->
+          <button class="main-header__nav--togglebtn">
+            <span class="material-symbols-outlined" id="toggle-icon">
+              menu
+            </span>
+          </button>
         </nav>
       </header>
+      <!-- MAIN HEADER END -->
       <main class="main main-layout__child"></main>
     </div>
+    <!-- MAIN LAYOUT END -->
   </body>
 </html>
