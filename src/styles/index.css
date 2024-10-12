@@ -1,3 +1,7 @@
+:root {
+  behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -61,7 +65,18 @@ h6 {
 
 /* MAIN HEADER */
 
-/* main header profile */
+.main-header {
+  height: 100%;
+  border-right: 1px solid #f0ebeb;
+}
+
+.main-header__nav {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+/* main header profile start */
 .main-header__profile--imagecontainer {
   height: 50px;
   overflow: hidden;
@@ -76,27 +91,22 @@ h6 {
   padding: 20px 10px;
 }
 
-/* //////////// */
+/* main header profile end */
 
+/* main header links start */
 .main-header__links {
   display: grid;
   grid-template-rows: 1fr auto;
+  height: 100%;
 }
 
-.main-header__nav--togglebtn {
+.main-header__links--closediv,
+.main-header__links--openbtn,
+.main-header__links--closebtn {
   display: none;
 }
 
-.main-header__nav {
-  height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
-
-.main-header {
-  height: 100%;
-  border-right: 1px solid #f0ebeb;
-}
+/* main header links end */
 
 @media screen and (max-width: 992px) {
   .main-header {
@@ -109,19 +119,65 @@ h6 {
     align-items: center;
   }
 
-  .main-header__links {
-    display: none;
+  .main-header__links,
+  .main-header__links--closediv {
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
-  /* nav toggle button */
-  .main-header__nav--togglebtn {
+  .main-header__links {
+    padding: 20px;
+    min-width: 240px;
+    z-index: 9999;
+    background-color: aqua;
+    transition: transform 0.3s;
+    transform: translateX(-100%);
+  }
+
+  .main-header__links--closediv {
     display: block;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: bisque;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+  }
+
+  /* These classes are added when the menu button is clicked */
+  .show-nav {
+    opacity: 1;
+    visibility: visible;
+    transition: all;
+  }
+
+  .show-links {
+    transform: translateX(0);
+  }
+  /* ///////////////////// */
+
+  /* nav toggle button */
+  .main-header__links--openbtn,
+  .main-header__links--closebtn {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  #toggle-icon {
+  .main-header__links--closebtn {
+    position: absolute;
+    top: 2%;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    transform: translateX(50%);
+    border: 1px solid;
+    border-radius: 50%;
+  }
+
+  .main-header__links--btnicon {
     font-size: 40px;
   }
 
