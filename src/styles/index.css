@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   behavior: smooth;
 }
@@ -10,9 +11,15 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
 }
 
 img,
@@ -45,6 +52,28 @@ h6 {
   overflow-wrap: break-word;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
 /* MAIN LAYOUT */
 
 .main-layout__child {
@@ -72,6 +101,7 @@ h6 {
 .main-header {
   height: 100%;
   border-right: 1px solid #f0ebeb;
+  /* position: sticky; */
 }
 
 .main-header__nav {
@@ -93,6 +123,14 @@ h6 {
   align-items: center;
   gap: 12px;
   padding: 20px 10px;
+}
+
+.main-header__profile--h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.main-header__profile--p {
+  font-size: 1.4rem;
 }
 
 /* main header profile end */
@@ -206,24 +244,3 @@ h6 {
   margin-top: 100px;
 }
 /* MAIN */
-
-/* RESUABLE CLASSES */
-
-/* nav links */
-.nav-links {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.nav-links__link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  padding: 6px 10px;
-  text-decoration: none;
-}
-
-/* RESUABLE CLASSES */

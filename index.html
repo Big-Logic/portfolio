@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/home.css" />
     <script defer src="./src/scripts/index.js"></script>
   </head>
   <body>
@@ -27,8 +27,8 @@
               />
             </div>
             <div>
-              <h2>Alfred Ngwayah</h2>
-              <p>Junior Frontend Engineer</p>
+              <h2 class="main-header__profile--h2">Alfred Ngwayah</h2>
+              <p class="main-header__profile--p">Junior Frontend Engineer</p>
             </div>
           </div>
           <!-- main header profile end-->
@@ -104,7 +104,101 @@
       </header>
       <!-- MAIN HEADER END -->
       <main class="main main-layout__child">
-        <div class="main-container"></div>
+        <div class="main-container">
+          <!-- HERO START -->
+          <section class="section hero">
+            <h1 class="hero-h1">
+              Hey, I'm Alfred. <br />
+              A junior frontend engineer
+            </h1>
+            <p class="hero-p">
+              I love blending creativity and Logic to Make the Web Shine. I
+              design, debug, deploy, and consume apis.
+            </p>
+            <div>
+              <a href="http://" class="btn hero-button">Contact me</a>
+              <a href="http://" class="btn hero-button">Review my GitHub</a>
+            </div>
+          </section>
+          <!-- HERO END -->
+          <section class="section projects">
+            <header class="section-header">
+              <h2>Projects</h2>
+            </header>
+            <div>
+              <div class="projects-item">
+                <div class="project-item__image">
+                  <img
+                    src="https://img.freepik.com/free-photo/male-developer-entering-binary-data-terminal-panel_482257-75385.jpg?t=st=1728763215~exp=1728766815~hmac=00da225b07bb57964e5d5c18073e58a3eeb7ceeeb1ad313f01903c8627c4a496&w=1060"
+                    alt="project image"
+                  />
+                </div>
+                <div>
+                  <div class="project-item__details">
+                    <h3>Weather app</h3>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Labore porro ducimus beatae hic sit impedit sint,
+                    </p>
+                    <div class="tags">
+                      <span class="tags-item">JavaScript</span>
+                      <span class="tags-item">TypeScript</span>
+                      <span class="tags-item">Redux</span>
+                    </div>
+                  </div>
+                  <a href="#" class="btn">View project</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section skills">
+            <header class="section-header">
+              <h2>Skills</h2>
+            </header>
+            <div class="tags skills-item">
+              <span class="tags-item skills-item-tag">Design</span>
+              <span class="tags-item skills-item-tag">Figma</span>
+              <span class="tags-item skills-item-tag">Webflow</span>
+              <span class="tags-item skills-item-tag">Wordpress</span>
+              <span class="tags-item skills-item-tag">HTML</span>
+              <span class="tags-item skills-item-tag">CSS3</span>
+              <span class="tags-item skills-item-tag">JavaScript</span>
+              <span class="tags-item skills-item-tag">TypeScript</span>
+              <span class="tags-item skills-item-tag">React</span>
+              <span class="tags-item skills-item-tag">React Query</span>
+              <span class="tags-item skills-item-tag">React Hook Form</span>
+              <span class="tags-item skills-item-tag">React Router</span>
+              <span class="tags-item skills-item-tag">Redux</span>
+              <span class="tags-item skills-item-tag">NextJs</span>
+              <span class="tags-item skills-item-tag">NodeJs</span>
+              <span class="tags-item skills-item-tag">NPM</span>
+              <span class="tags-item skills-item-tag">StyledComponents</span>
+              <span class="tags-item skills-item-tag">Tailwind</span>
+              <span class="tags-item skills-item-tag">Markdown</span>
+              <span class="tags-item skills-item-tag">Git</span>
+              <span class="tags-item skills-item-tag">GitHub</span>
+              <span class="tags-item skills-item-tag">React Native</span>
+              <span class="tags-item skills-item-tag">Mocha</span>
+              <span class="tags-item skills-item-tag">Jest</span>
+              <span class="tags-item skills-item-tag">ViteJs</span>
+            </div>
+          </section>
+
+          <section class="section collaborate">
+            <div class="collaborate-item">
+              <h2>Let's Collaborate</h2>
+              <p class="collaborate-item__p">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ducimus cum accusamus harum asperiores molestiae voluptatem
+                similique totam voluptatum repellendus sit.
+              </p>
+              <div>
+                <a href="http://" class="btn hero-button">Contact me</a>
+                <a href="http://" class="btn hero-button">Review my GitHub</a>
+              </div>
+            </div>
+          </section>
+        </div>
       </main>
     </div>
     <!-- MAIN LAYOUT END -->

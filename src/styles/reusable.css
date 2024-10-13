@@ -1,0 +1,81 @@
+/* nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-links__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-header {
+  margin-bottom: 2rem;
+}
+
+.btn {
+  min-width: 14rem;
+  border: 1px solid;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin: 1rem 3rem 1rem 0;
+}
+
+/* PROJECTS */
+.projects-item {
+  display: grid;
+  grid-template-columns: 44fr 56fr;
+  align-items: center;
+  gap: 6rem;
+  padding: 4rem 0;
+  border-top: 1px solid #f0ebeb;
+}
+
+.project-item__image {
+  min-height: 260px;
+  overflow: hidden;
+  border: 2rem solid;
+  border-radius: 10px;
+}
+
+.project-item__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.tags {
+  font-size: 1.2rem;
+}
+
+.tags-item {
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid;
+  border-radius: 6px;
+  margin-right: 0.6rem;
+}
+/* PROJECTS */
+
+/* COLLABORATE */
+.collaborate-item {
+  border: 1px solid #f0ebeb;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.collaborate-item__p {
+  margin: 1rem 0 2rem 0;
+}
+/* COLLABORATE */
