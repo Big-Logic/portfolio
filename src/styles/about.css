@@ -1,2 +1,29 @@
 @import url("./index.css");
 @import url("./reusable.css");
+
+/* ABOUT IMAGE */
+.about-image {
+  overflow: hidden;
+  border-radius: 10px;
+  max-height: 70rem;
+}
+/* ABOUT IMAGE */
+
+/* EDUCATION */
+.education-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: end;
+  border-bottom: 1px solid #f0ebeb;
+  padding: 2rem 0;
+}
+
+.education-item__school {
+  /* justify-self: end; */
+  text-align: right;
+}
+
+.education-item__year {
+  font-size: 1.4rem;
+}
+/* EDUCATION */

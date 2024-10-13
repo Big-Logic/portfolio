@@ -1,17 +1,6 @@
 @import url("./index.css");
 @import url("./reusable.css");
 
-/* HERO */
-.hero-h1 {
-  font-size: 5rem;
-}
-
-.hero-p {
-  margin: 1.5rem 0 3rem 0;
-}
-
-/* HERO */
-
 /* SKILLS */
 
 .skills-item-tag {

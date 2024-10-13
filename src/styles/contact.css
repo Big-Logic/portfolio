@@ -1,2 +1,39 @@
 @import url("./index.css");
 @import url("./reusable.css");
+
+/* CONTACT FORM */
+.contact-form {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0 4rem;
+}
+.contact-form__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-color);
+}
+
+.contact-form__textarea {
+  min-height: 20rem;
+}
+
+.contact-form__button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  margin: 3rem 0;
+}
+/* CONTACT FORM */

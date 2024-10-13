@@ -104,7 +104,74 @@
       </header>
       <!-- MAIN HEADER END -->
       <main class="main main-layout__child">
-        <div class="main-container"></div>
+        <div class="main-container">
+          <section class="section hero">
+            <h1 class="hero-h1">Contact Me</h1>
+            <p class="hero-p">Together we can make the comfortable place.</p>
+            <div>
+              <a href="http://" class="btn hero-button outline-btn">Call me </a>
+              <a href="http://" class="btn hero-button outline-btn"
+                >Send a mail</a
+              >
+            </div>
+          </section>
+
+          <section class="section form-section">
+            <form class="contact-form">
+              <div class="contact-form__item">
+                <div>
+                  <label for="firstname">First Name</label>
+                  <input
+                    type="text"
+                    required
+                    id="firtname"
+                    class="contact-form__input"
+                  />
+                </div>
+                <div>
+                  <label for="lastname">Last Name</label>
+                  <input
+                    type="text"
+                    required
+                    id="lastname"
+                    class="contact-form__input"
+                  />
+                </div>
+              </div>
+              <div class="contact-form__item">
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    required
+                    id="email"
+                    class="contact-form__input"
+                  />
+                </div>
+                <div>
+                  <label for="phone">Phone</label>
+                  <input
+                    type="text"
+                    required
+                    id="phone"
+                    class="contact-form__input"
+                  />
+                </div>
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea
+                  required
+                  id="message"
+                  class="contact-form__textarea"
+                ></textarea>
+              </div>
+              <button type="submit" class="contact-form__button cta-btn">
+                Submit
+              </button>
+            </form>
+          </section>
+        </div>
       </main>
     </div>
     <!-- MAIN LAYOUT END -->

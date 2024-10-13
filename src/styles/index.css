@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   behavior: smooth;
+  --primary-color: #006bff;
+  --white-color: #fff;
+  --heading-color: #001533;
+  --link-color: #006bff;
+  --gray-color: hsl(215, 15%, 50%);
+  --border-color: #f0ebeb;
+  --shade: #000b19;
 }
 
 *,
@@ -59,6 +66,7 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
+  color: var(--heading-color);
 }
 
 h2 {
@@ -72,6 +80,7 @@ h3 {
 a {
   text-decoration: none;
   display: inline-block;
+  color: var(--link-color);
 }
 
 /* MAIN LAYOUT */
@@ -100,7 +109,7 @@ a {
 
 .main-header {
   height: 100%;
-  border-right: 1px solid #f0ebeb;
+  border-right: 1px solid var(--border-color);
   /* position: sticky; */
 }
 
@@ -152,7 +161,7 @@ a {
 
 @media screen and (max-width: 992px) {
   .main-header {
-    border-bottom: 1px solid #f0ebeb;
+    border-bottom: 1px solid var(--border-color);
   }
 
   .main-header__nav {
@@ -172,7 +181,7 @@ a {
     padding: 20px;
     min-width: 240px;
     z-index: 9999;
-    background-color: aqua;
+    background-color: var(--heading-color);
     transition: transform 0.3s;
     transform: translateX(-100%);
   }
@@ -182,7 +191,6 @@ a {
     width: 100vw;
     height: 100vh;
     z-index: 999;
-    background-color: bisque;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s;
@@ -242,5 +250,12 @@ a {
   margin: 0 auto;
   padding: 8px;
   margin-top: 100px;
+}
+
+@media screen and (min-width: 992px) {
+  .main {
+    height: 100vh;
+    overflow-y: auto;
+  }
 }
 /* MAIN */
