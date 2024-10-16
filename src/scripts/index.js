@@ -1,3 +1,5 @@
+import "./navigation.js";
+
 const mainHeaderLinksCloseDiv = document.querySelector(
   ".main-header__links--closediv"
 );

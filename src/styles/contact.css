@@ -36,4 +36,10 @@
   border-radius: 8px;
   margin: 3rem 0;
 }
+
+@media screen and (max-width: 576px) {
+  .contact-form__item {
+    grid-template-columns: 1fr;
+  }
+}
 /* CONTACT FORM */

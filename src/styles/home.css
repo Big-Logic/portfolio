@@ -9,4 +9,9 @@
   margin: 0 1.5rem 2rem 0;
 }
 
+@media screen and (max-width: 768px) {
+  .skills-item-tag {
+    font-size: 2rem;
+  }
+}
 /* SKILLS */
