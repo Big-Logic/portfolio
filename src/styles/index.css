@@ -163,6 +163,13 @@ a {
 
 .nav-links__link {
   color: var(--shade);
+  border-radius: 10px;
+}
+
+/* this class is added to the active nav link */
+.active-link {
+  background-color: var(--gray-color);
+  color: var(--white-color);
 }
 
 .main-header__links--closediv,
@@ -198,6 +205,10 @@ a {
     background-color: var(--heading-color);
     transition: transform 0.3s;
     transform: translateX(-100%);
+  }
+
+  .nav-links__link {
+    color: var(--white-color);
   }
 
   .main-header__links--closediv {
