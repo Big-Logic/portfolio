@@ -29,17 +29,19 @@ function handleNavLinksToggle(action) {
   }
 }
 
-mainHeaderLinksOpenButton.addEventListener("click", () => {
-  handleNavLinksToggle("open");
-});
+export function addHandlersToToggleElements() {
+  mainHeaderLinksOpenButton.addEventListener("click", () => {
+    handleNavLinksToggle("open");
+  });
 
-mainHeaderLinksCloseButton.addEventListener("click", () => {
-  handleNavLinksToggle("close");
-});
+  mainHeaderLinksCloseButton.addEventListener("click", () => {
+    handleNavLinksToggle("close");
+  });
 
-mainHeaderLinksCloseDiv.addEventListener("click", () => {
-  handleNavLinksToggle("close");
-});
+  mainHeaderLinksCloseDiv.addEventListener("click", () => {
+    handleNavLinksToggle("close");
+  });
+}
 
 export function styleActiveLink() {
   const links = document.querySelectorAll(".page-link");
@@ -52,5 +54,3 @@ export function styleActiveLink() {
     }
   });
 }
-
-styleActiveLink();
