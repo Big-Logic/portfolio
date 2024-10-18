@@ -37,6 +37,22 @@
   margin: 3rem 0;
 }
 
+.fnd {
+  cursor: not-allowed;
+  background-color: var(--gray-color);
+}
+
+#form-error__msg {
+  font-size: 1.5rem;
+  color: rgb(185, 7, 7);
+  margin-top: 1rem;
+}
+
+#form-success__msg {
+  font-size: 2rem;
+  text-align: center;
+}
+
 @media screen and (max-width: 576px) {
   .contact-form__item {
     grid-template-columns: 1fr;

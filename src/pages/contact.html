@@ -11,6 +11,11 @@
     />
     <link rel="stylesheet" href="../styles/contact.css" />
     <script defer src="../scripts/index.js" type="module"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script defer src="../scripts/contactForm.js"></script>
   </head>
   <body>
     <!-- MAIN LAYOUT START -->
@@ -126,14 +131,15 @@
           </section>
 
           <section class="section form-section">
-            <form class="contact-form">
+            <form class="contact-form" id="contact-form">
+              <p id="form-error__msg"></p>
               <div class="contact-form__item">
                 <div>
                   <label for="firstname">First Name</label>
                   <input
                     type="text"
                     required
-                    id="firtname"
+                    id="firstname"
                     class="contact-form__input"
                   />
                 </div>
@@ -175,7 +181,11 @@
                   class="contact-form__textarea"
                 ></textarea>
               </div>
-              <button type="submit" class="contact-form__button cta-btn">
+              <button
+                type="submit"
+                class="contact-form__button cta-btn"
+                id="contact-form__button"
+              >
                 Submit
               </button>
             </form>
