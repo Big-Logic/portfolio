@@ -42,12 +42,18 @@ async function sendEmail(data) {
     message: data.message,
   };
 
+  const templateParams2 = {
+    fullName: data.firstName + " " + data.lastName,
+    email: data.email,
+  };
+
   emailjs.init({
     publicKey: "ZXCFeU-txJ4EDiPg9",
   });
 
   try {
-    await emailjs.send("service_yafat67", "template_h59x9b9", templateParams);
+    emailjs.send("service_yafat67", "template_h59x9b9", templateParams);
+    emailjs.send("service_yafat67", "template_dndysgl", templateParams2);
   } catch (err) {
     console.log(err);
   }
