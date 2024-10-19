@@ -47,16 +47,18 @@ async function sendEmail(data) {
     email: data.email,
   };
 
+  //   This is taken from an sdk that is imported above the contactForm script in contact.html
+  //Initial the sdk
   emailjs.init({
     publicKey: "ZXCFeU-txJ4EDiPg9",
   });
 
   try {
+    //send email to Alfred
     emailjs.send("service_yafat67", "template_h59x9b9", templateParams);
+    //send email to the user filling in the form
     emailjs.send("service_yafat67", "template_dndysgl", templateParams2);
-  } catch (err) {
-    console.log(err);
-  }
+  } catch (err) {}
 }
 
 async function handleSubmit(e) {

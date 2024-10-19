@@ -87,13 +87,15 @@
   gap: 6rem;
   padding: 4rem 0;
   border-top: 1px solid var(--border-color);
-  /* opacity: 0; */
-  /* transform: translateX(100%); */
-  transition: all 0.3s;
 }
 
-.show-project-item {
-  opacity: 1;
+.zoom-out-default {
+  transform: scale(0.5);
+  transition: all 2s;
+}
+
+.zoom-out-complete {
+  transform: scale(1);
 }
 
 .project-item__image {
@@ -141,3 +143,19 @@
   margin: 1rem 0 2rem 0;
 }
 /* COLLABORATE */
+
+/* Scroll to top btn */
+.scroll-to-top__btn {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+}

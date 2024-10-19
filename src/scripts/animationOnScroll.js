@@ -1,26 +1,34 @@
-function observerCallback(entries, thresholds, domNode, classToAdd) {
-  const entry = entries[0];
-  const intersectionRatio = entry.intersectionRatio;
-  if (entry.isIntersecting) {
-  } else {
-  }
+function observerCallback(entries, classToAdd) {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add(classToAdd);
+    } else {
+      entry.target.classList.remove(classToAdd);
+    }
+  });
 }
 
-export function animationOnScroll(domNode, classToAdd) {
-  const thresholds = [0.2, 0.6, 1.0];
+export function animationOnScroll(domNodes, initialClass, classToAdd) {
+  domNodes.forEach((domNode) => {
+    domNode.classList.add(initialClass);
+    // observer.observe(domNode);
+  });
   const options = {
     root: null,
     rootMargin: "0px",
-    threshold: thresholds,
   };
   const observer = new IntersectionObserver((entries) => {
-    observerCallback(entries, thresholds, domNode, classToAdd);
+    observerCallback(entries, classToAdd);
   }, options);
 
-  observer.observe(domNode);
+  domNodes.forEach((domNode) => {
+    // domNode.classList.add(initialClass);
+    observer.observe(domNode);
+  });
 }
 
 animationOnScroll(
-  document.querySelector(".projects-item"),
-  "show-project-item"
+  document.querySelectorAll(".projects-item"),
+  "zoom-out-default",
+  "zoom-out-complete"
 );
